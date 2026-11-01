@@ -1,193 +1,99 @@
-# Awesome-Managed-SAAS-Data-Applications
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Managed SaaS Data Applications Banner" width="100%">
+</p>
 
-## Top Managed SaaS Data Applications Ecosystem
+# 🚀 Awesome Managed SaaS Data Applications [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+> 🌟 A curated list of notable **Managed SaaS Data Applications**, enterprise cloud marketplaces, certified partner ecosystems, and high-performance open-source self-hosted alternatives.
 
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Platform Ecosystems, Managed App Marketplaces & Self-Hosted Alternatives*  
-
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Managed SaaS Data Applications**. These platforms provide the managed application layer—CRM, ERP, ITSM, HR, and marketing—where organizations run their core business processes, along with the marketplaces where third-party vendors distribute certified apps and integrations.
-
-
-
-**Examples** include Snowflake Managed Apps, Salesforce, Workday, ServiceNow, NetSuite, HubSpot, SAP Cloud, Zendesk, Atlassian Cloud, and Adobe Experience Cloud (the category leaders).
-
-
-
-**Open-source emphasis**: Managed SaaS Data Applications is a domain where the "managed app" concept is **inherently platform-specific**—Salesforce's managed packages, ServiceNow's certified Store apps, and NetSuite's SuiteApps are distribution mechanisms tied to commercial platforms, not standalone products. **No open-source project replicates the marketplace and certification infrastructure** of these ecosystems. What open-source *does* provide is **self-hosted alternatives to the core applications themselves**: **Twenty** for CRM (open-source Salesforce alternative) , **Salamandr** for helpdesk (self-hosted Zendesk alternative) , **FreeITSM** for IT service management , and **Hermit CRM** for file-based relationship management . The critical caveat: **open-source alternatives replace the application, not the marketplace**—there is no open-source equivalent to AppExchange's certified partner ecosystem or the ServiceNow Store's rigorous compatibility certification .
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Snowflake Managed Apps](https://www.snowflake.com/)**  
-
-  Snowflake Marketplace hosts both **Connected Apps** and **Managed Apps**—the latter are fully managed by the provider, who maintains and operates the Snowflake environment on the customer's behalf . Domo's "Powered by Snowflake" offering is an example of a managed analytics app where Domo runs the infrastructure .
-
-
-
-- **[Salesforce AppExchange](https://appexchange.salesforce.com/)**  
-
-  The most mature enterprise app marketplace; **managed packages** are upgradeable, locked-component bundles that subscribers cannot break during upgrades . Developers must use a Developer Edition org, and once a package is Managed-Released, it cannot be converted back to unmanaged .
-
-
-
-- **[Workday Marketplace](https://marketplace.workday.com/)**  
-
-  Certified partner apps and AI agents across HR, Finance, and Planning; examples include Goal Assistant for AI-driven goal setting, Pay When Paid for invoice linking, and Grant Planning for nonprofits .
-
-
-
-- **[ServiceNow Store](https://store.servicenow.com/)**  
-
-  Certified apps and integrations for the Now Platform; **every app is rigorously reviewed for compatibility, security, and performance** before listing . Apps require entitlement verification, and only admins can install trials (90-day expiry on sub-production instances) .
-
-
-
-- **[NetSuite SuiteApp Marketplace](https://www.netsuite.com/)**  
-
-  SuiteApps extend NetSuite functionality, created by Oracle-NetSuite or SDN partners; managed-update SuiteApps require little maintenance, while unmanaged ones require manual upgrades .
-
-
-
-- **[HubSpot App Marketplace](https://www.hubspot.com/apps)**  
-
-  Integration marketplace for HubSpot CRM; popular apps include Gmail, Google Calendar, Outlook, Zapier (8,000+ apps), Slack, Zoom, and PostgreSQL/MySQL connectors for bidirectional sync .
-
-
-
-- **[SAP Store](https://store.sap.com/)**  
-
-  SAP's certified partner marketplace; the **Spotlight+ designation** recognizes solutions certified on SAP BTP with clean-core compatibility and strategic alignment .
-
-
-
-- **[Zendesk Marketplace](https://www.zendesk.com/apps/)**  
-
-  The **second-largest cloud marketplace in SaaS** with 1,500+ apps; **58% of Zendesk customers have installed at least one app**, impacting 75% of ARR . Popular categories include Collaboration (Jira, Teams), eCommerce (Shopify), and EX (AssetSonar) .
-
-
-
-- **[Atlassian Cloud Marketplace](https://marketplace.atlassian.com/)**  
-
-  App marketplace for Jira, Confluence, and Bitbucket; Atlassian is introducing **app versions** (Standard and Advanced tiers) allowing customers to choose or upgrade between versions .
-
-
-
-- **[Adobe Experience Cloud Exchange](https://exchange.adobe.com/)**  
-
-  Single destination for Digital Marketing extensions—data connectors, custom configurations, and third-party apps; apps are reviewed before publishing .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Self-Hosted CRM Alternatives (Salesforce/Twenty)
-
-
-
-- **[Twenty](https://github.com/twentyhq/twenty)**  
-
-  Open-source CRM positioned as a developer-friendly **Salesforce alternative** (AGPL-3.0) . **Version 2.0** adds **MCP integration** so LLM clients like Claude can access CRM data via OAuth-secured interfaces; SDK subpath splitting reduces bundle size by **700x** for serverless cold starts; Docker targets for AWS EKS; OAuth PKCE enforcement; and new self-hosting licensing/billing workflows . **Best for teams wanting a modern, extensible CRM** with self-hosting and AI integration—but it is a CRM application, not a marketplace with certified partner apps.
-
-
-
-### Self-Hosted Helpdesk Alternatives (Zendesk/Salamandr)
-
-
-
-- **[Salamandr](https://hub.docker.com/r/system4us/salamandr-backend)**  
-
-  Self-hosted **Zendesk/Freshdesk/Intercom alternative** (AGPL-3.0, Go + PostgreSQL + Redis, single container) . Features: **omnichannel unified inbox** (email IMAP/SMTP, WhatsApp Cloud API, Live Chat, Slack, Discord); **zero telemetry guarantee** (air-gap ready); **local AI via Ollama + pgvector** for document RAG without third-party LLM data leaks; sub-millisecond routing; and **no per-seat pricing** . **Best for privacy-conscious organizations** wanting a self-hosted helpdesk—but it is an application, not a marketplace ecosystem.
-
-
-
-### Self-Hosted ITSM (ServiceNow/FreeITSM)
-
-
-
-- **[FreeITSM](https://github.com/edmozley/freeitsm)**  
-
-  A completely free open-source **ITSM tool** with data ownership and simplicity as core values . Features include multi-tenancy for MSPs, custom asset fields, Active Directory people import, webhooks for Slack/Teams/Discord, service status with historical uptime tracking, and charge assets/contracts/people to cost centres . **Best for small IT teams** wanting a lightweight ServiceNow alternative—but it lacks the certified app ecosystem and enterprise workflow depth of ServiceNow.
-
-
-
-### File-Based CRM (Hermit CRM)
-
-
-
-- **[Hermit CRM](https://pypi.org/project/hermitcrm/)**  
-
-  Open-source **file-based CRM** where every company is a folder, every contact and interaction is a Markdown file, and **Git tracks history** . Features: pipeline board with custom stages; follow-up radar; tasks and calendar; pre-meeting briefs; bookmarklet for page-to-contact capture; BCC import; **MCP server** for Claude/ChatGPT/Cursor access with ten read and seven write tools; and a phone-accessible web server (`hermitcrm serve --host 0.0.0.0`) . **Best for individuals and small teams** wanting CRM data as plain files they own—but it is personal-scale, not an enterprise managed app platform.
-
-
-
-**Frameworks for building custom systems**: **No open-source project replicates the managed app marketplace infrastructure** of AppExchange, ServiceNow Store, or NetSuite SuiteApp—those are commercial certification and distribution ecosystems . For **self-hosted application alternatives**, Twenty provides CRM , Salamandr provides helpdesk , and FreeITSM provides ITSM . For **file-based personal CRM**, Hermit CRM . Choose based on whether you need a marketplace (commercial only) or an application (open-source viable).
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Managed SaaS platforms handling business data must comply with applicable regulations and organizational data governance policies; **self-hosted alternatives place full responsibility for security, backups, and uptime on the operator**.
-
-- **Open-source cannot replicate the managed app marketplace ecosystem**—Salesforce managed packages, ServiceNow Store certification, and NetSuite SuiteApps are platform-specific distribution mechanisms tied to commercial ecosystems . Open-source provides **self-hosted alternatives to the core applications** (Twenty for CRM, Salamandr for helpdesk, FreeITSM for ITSM), but not the marketplace. Choose based on whether you need the ecosystem or the application.
-
-- Verify license terms for commercial use; Twenty uses AGPL-3.0 , Salamandr uses AGPL-3.0 , and Hermit CRM is open-source .
-
-
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Managed-SAAS-Data-Applications/blob/main/CONTRIBUTING.md)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![Track: Cloud & Data Architecture](https://img.shields.io/badge/Track-Cloud%20%26%20Data%20Architecture-blue.svg)](#)
 
 ---
 
+## 📈 Sector Overview & Market Dynamics
 
+The global Software-as-a-Service (SaaS) and managed cloud data application market is estimated at **$408B – $465B in 2025–2026**, on a steady trajectory to surpass **$500B** by 2027 with a ~18% CAGR. 
 
-**Made for platform architects, IT leaders, and organizations choosing their managed SaaS application stack.**  
+The sector exhibits **moderate concentration with strong network effects**: while thousands of niche vertical SaaS applications proliferate across functional domains, the underlying data applications and managed marketplace layers are anchored by category titans (such as Oracle, SAP, Salesforce, ServiceNow, Adobe, and Snowflake). In these ecosystems, platform winners capture dominant gross merchandise value (GMV) and enterprise retention through proprietary certification programs, developer lock-in, and pre-integrated AppExchange/Store distribution channels.
 
-Let's make managed SaaS data applications more open at the application layer, but with clear eyes about the marketplace and certification ecosystems that commercial platforms uniquely provide.
+---
+
+## 📑 Table of Contents
+
+- [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+The table below outlines category-defining managed SaaS data platforms, their company scale (sorted in descending order by market valuation / enterprise scale), pricing models, and free access limits.
+
+| 🏢 Platform | 💰 Company Valuation / Revenue | 🏷️ Starting Pricing Tier | 🎁 Free Tier / Trial Limit | 🧩 Ecosystem Highlights |
+|:---|:---|:---|:---|:---|
+| **[NetSuite](https://www.netsuite.com/)** (Oracle) | **~$360B** Market Cap *(Oracle FY25 Rev: $53B)* | **$999/month** base platform fee + **$99/user/month** | **No ongoing free tier**; 14-day guided product demo/trial available upon sales qualification | SuiteApp Marketplace with managed updates, automated SDN partner certification, and native ERP data structures. |
+| **[SAP Cloud / Store](https://store.sap.com/)** | **~$280B** Market Cap *(FY24 Rev: €31B)* | **€1,350/tenant/month** (SAP BTP Standard tier entry) | **Free tier on SAP BTP**: Up to 30 service instances indefinitely; 90-day global enterprise trial | SAP Store featuring Spotlight+ certified clean-core extensions and enterprise workflow integrations. |
+| **[Salesforce AppExchange](https://appexchange.salesforce.com/)** | **~$270B** Market Cap *(FY25 Rev: $38B)* | **$25/user/month** (Starter Suite / Sales Essentials) | **Free lifetime Developer Edition org**; 30-day full-featured free trial for Sales & Service Cloud | Gold standard enterprise marketplace with locked-component upgradeable managed packages and security reviews. |
+| **[Adobe Experience Cloud](https://exchange.adobe.com/)** | **~$200B** Market Cap *(FY24 Rev: $21.5B)* | **$1,250/month** (Adobe Experience Manager Foundations) | **No free tier**; 7-day to 30-day sandbox trials provided strictly for verified enterprise partners | Exchange marketplace for digital marketing integrations, real-time CDP extensions, and customer journey orchestration. |
+| **[ServiceNow Store](https://store.servicenow.com/)** | **~$190B** Market Cap *(FY24 Rev: $11B)* | **$100/user/month** (ITSM Professional starting estimate) | **Free lifetime Personal Developer Instance (PDI)** (hibernates after 10 days idle); 90-day store app trials on sub-prod | Now Platform store requiring mandatory compatibility, performance, and security testing for every vendor app. |
+| **[Workday Marketplace](https://marketplace.workday.com/)** | **~$68B** Market Cap *(FY25 Rev: $8.4B)* | **$100/employee/month** (Core HCM entry bundle) | **No self-serve free tier**; 30-day structured sandbox environment for qualified prospective enterprise accounts | Certified AI agents, financial applications, and HR planning extensions verified on the Workday platform. |
+| **[Snowflake Managed Apps](https://www.snowflake.com/)** | **~$55B** Market Cap *(FY25 Rev: $3.6B)* | **$2.00/credit** (Standard Edition compute & storage) | **30-day free trial** with **$400 in complimentary usage credits** | Snowflake Marketplace hosting Native Apps and provider-managed compute environments with zero data movement. |
+| **[Atlassian Cloud](https://marketplace.atlassian.com/)** | **~$45B** Market Cap *(FY24 Rev: $4.4B)* | **$7.75/user/month** (Jira Software Standard) | **Free forever plan** for up to **10 users** and 2 GB cloud storage; 7-day to 30-day trials for higher tiers | 5,000+ Marketplace apps across Jira, Confluence, and Bitbucket with Standard and Advanced version tiers. |
+| **[HubSpot App Marketplace](https://www.hubspot.com/apps)** | **~$30B** Market Cap *(FY24 Rev: $2.6B)* | **$15/seat/month** (HubSpot Starter Customer Platform) | **Free forever plan** with basic CRM, up to 5 email templates, 1 shared inbox, and 1,000 marketing contacts | Over 1,500 turnkey marketplace integrations with bi-directional data synchronization and workflow webhooks. |
+| **[Zendesk Marketplace](https://www.zendesk.com/apps/)** | **~$10.2B** Acquired / Valuation *(FY24 Rev: ~$2.1B)* | **$19/agent/month** (Support Team plan) | **14-day fully-featured free trial** with complete multi-channel support features | The second largest SaaS marketplace featuring 1,500+ apps powering customer service, omni-channel workflows, and QA. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+The following open-source projects provide powerful self-hosted alternatives, internal tool frameworks, and data application engines. They are ranked in descending order by community GitHub stars.
+
+| 📦 Repository & Project | ⭐ GitHub Stars | ⚖️ License | 🎯 Target & Functional Focus |
+|:---|:---|:---|:---|
+| **[NocoDB](https://github.com/nocodb/nocodb)** | [![NocoDB Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers) | AGPL-3.0 | 📊 **Smart Spreadsheet & Airtable Alternative** — Turns any relational database (PostgreSQL, MySQL, SQL Server) into a no-code collaborative data application platform with REST APIs and webhooks. |
+| **[Twenty](https://github.com/twentyhq/twenty)** | [![Twenty Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers) | AGPL-3.0 | 🤝 **Modern CRM & Salesforce Alternative** — Fully open-source CRM featuring Model Context Protocol (MCP) server integration, native GraphQL APIs, Docker/K8s deployment, and zero vendor lock-in. |
+| **[Appsmith](https://github.com/appsmithorg/appsmith)** | [![Appsmith Stars](https://img.shields.io/github/stars/appsmithorg/appsmith?style=social&color=white)](https://github.com/appsmithorg/appsmith/stargazers) | Apache-2.0 | 🛠️ **Internal Application Builder** — Drag-and-drop low-code engine for creating complex admin panels, database CRUD applications, and business workflows connecting to 25+ data sources. |
+| **[ToolJet](https://github.com/ToolJet/ToolJet)** | [![ToolJet Stars](https://img.shields.io/github/stars/ToolJet/ToolJet?style=social&color=white)](https://github.com/ToolJet/ToolJet/stargazers) | AGPL-3.0 | 🤖 **AI-Native Enterprise App Platform** — Low-code visual application framework with native AI agent integration, MCP connectivity, and support for enterprise internal tools. |
+| **[ERPNext](https://github.com/frappe/erpnext)** | [![ERPNext Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers) | GPL-3.0 | 🏭 **Enterprise Resource Planning (ERP)** — Comprehensive NetSuite / SAP alternative offering modules for accounting, inventory, supply chain, manufacturing, HR, and CRM on the Frappe framework. |
+| **[Chatwoot](https://github.com/chatwoot/chatwoot)** | [![Chatwoot Stars](https://img.shields.io/github/stars/chatwoot/chatwoot?style=social&color=white)](https://github.com/chatwoot/chatwoot/stargazers) | AGPL-3.0 | 💬 **Customer Engagement & Helpdesk Suite** — Open-source Zendesk and Intercom alternative providing omnichannel inbox management (Email, WhatsApp, SMS, Web Chat) with deep CRM connectivity. |
+| **[Budibase](https://github.com/Budibase/budibase)** | [![Budibase Stars](https://img.shields.io/github/stars/Budibase/budibase?style=social&color=white)](https://github.com/Budibase/budibase/stargazers) | GPL-3.0 | ⚡ **Operations Automation & Portal Builder** — Self-hostable low-code platform to build internal data tools, forms, approvals, and portal interfaces on top of SQL, MongoDB, and REST APIs. |
+| **[GLPI](https://github.com/glpi-project/glpi)** | [![GLPI Stars](https://img.shields.io/github/stars/glpi-project/glpi?style=social&color=white)](https://github.com/glpi-project/glpi/stargazers) | GPL-3.0 | 💻 **IT Service Management (ITSM)** — Self-hosted ServiceNow alternative featuring ITIL-compliant service desk, automated asset discovery, datacenter infrastructure management, and license tracking. |
+| **[EspoCRM](https://github.com/espocrm/espocrm)** | [![EspoCRM Stars](https://img.shields.io/github/stars/espocrm/espocrm?style=social&color=white)](https://github.com/espocrm/espocrm/stargazers) | GPL-3.0 | 📇 **Lightweight Business CRM** — Responsive single-page application CRM to track leads, opportunities, sales accounts, and automated business workflows. |
+| **[FreeITSM](https://github.com/edmozley/freeitsm)** | [![FreeITSM Stars](https://img.shields.io/github/stars/edmozley/freeitsm?style=social&color=white)](https://github.com/edmozley/freeitsm/stargazers) | MIT | 🎫 **Lightweight Service Desk** — Minimalist open-source IT service management tool designed for small teams and MSPs, complete with Active Directory sync and multi-tenant support. |
+| **[Hermit CRM](https://github.com/Hermit-CRM/hermit-crm)** | [![Hermit CRM Stars](https://img.shields.io/github/stars/Hermit-CRM/hermit-crm?style=social&color=white)](https://github.com/Hermit-CRM/hermit-crm/stargazers) | Apache-2.0 | 📁 **Git-Native & Markdown CRM** — Local-first CRM storing every customer and interaction as Markdown files in Git, complete with an embedded MCP server for LLM assistants. |
+
+> 💡 **Architectural Note on Open-Source vs. Managed Ecosystems**:  
+> Open-source projects deliver outstanding self-hosted alternatives to the **core functional applications** (CRM, ERP, ITSM, and App Builders). However, commercial SaaS titans uniquely provide **global certified marketplaces** (e.g., Salesforce AppExchange, ServiceNow Store) with automated tenant provisioning, cryptographic code locking, and centralized billing. Choose open-source when data sovereignty, cost control, and self-hosting flexibility matter most; choose managed platforms when you require pre-certified enterprise partner ecosystems.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help keep this ecosystem guide up-to-date:
+
+1. 🍴 Fork the repository.
+2. 🌿 Create a descriptive branch: `git checkout -b add-awesome-data-app`.
+3. 📝 Update `README.md` following the tabular format and guidelines:
+   - Provide verified starting tier pricing and specific trial / free tier terms.
+   - For open-source repos, verify the repository license and GitHub star badge format.
+4. 🚀 Push your changes and submit a Pull Request with a clear description of additions.
+
+---
+
+## ⚠️ Disclaimer
+
+- This curated list is maintained for architectural research and educational benchmarking.
+- Pricing, packaging, and commercial terms are subject to change by respective vendors. Always review official vendor documentation for up-to-date licensing terms.
+- Self-hosted open-source software places complete operational responsibility (security hardening, backup policies, compliance, and disaster recovery) on the infrastructure operator.
+
+---
+
+<p align="center">
+  <b>Curated with ❤️ for platform architects, enterprise engineers, and open-source advocates.</b><br>
+  <sub>Found this guide valuable? Please consider giving it a ⭐ on GitHub!</sub>
+</p>
