@@ -6,9 +6,11 @@
 
 > 🌟 A curated list of notable **Managed SaaS Data Applications**, enterprise cloud marketplaces, certified partner ecosystems, and high-performance open-source self-hosted alternatives.
 
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badee&logo=discord&logoColor=white" alt="Discord" /></a>
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Managed-SAAS-Data-Applications/blob/main/CONTRIBUTING.md)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![Track: Cloud & Data Architecture](https://img.shields.io/badge/Track-Cloud%20%26%20Data%20Architecture-blue.svg)](#)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 ---
 
@@ -26,6 +28,8 @@ The sector exhibits **moderate concentration with strong network effects**: whil
 - [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
 - [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⭐ Star History](#-star-history)
 - [⚠️ Disclaimer](#️-disclaimer)
 
 ---
@@ -82,6 +86,22 @@ Contributions are warmly welcomed! Help keep this ecosystem guide up-to-date:
    - Provide verified starting tier pricing and specific trial / free tier terms.
    - For open-source repos, verify the repository license and GitHub star badge format.
 4. 🚀 Push your changes and submit a Pull Request with a clear description of additions.
+
+---
+
+## 💖 Support
+
+Thank you for visiting and using this curated directory! If you find this resource helpful, please consider supporting the project:
+
+- ⭐ **Star this repository** to show appreciation and boost visibility.
+- 🍴 **Fork and share** it with your fellow engineers, architects, and community.
+- ☕ **Buy me a coffee**: Support continued open-source curation and maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📊 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Managed-SAAS-Data-Applications&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Managed-SAAS-Data-Applications&type=date&legend=top-left)
 
 ---
 
