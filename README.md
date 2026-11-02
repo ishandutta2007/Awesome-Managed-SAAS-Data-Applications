@@ -55,9 +55,9 @@ The table below outlines category-defining managed SaaS data platforms, their co
 
 ## 🔓 Open-Source GitHub Projects
 
-The following open-source projects provide powerful self-hosted alternatives, internal tool frameworks, and data application engines. They are ranked in descending order by community GitHub stars.
+The following open-source projects provide powerful self-hosted alternatives, internal tool frameworks, and data application engines. They are ranked in descending order by community GitHub_Stars.
 
-| 📦 Repository & Project | ⭐ GitHub Stars | ⚖️ License | 🎯 Target & Functional Focus |
+| 📦 Repository & Project | ⭐ GitHub_Stars | ⚖️ License | 🎯 Target & Functional Focus |
 |:---|:---|:---|:---|
 | **[NocoDB](https://github.com/nocodb/nocodb)** | [![NocoDB Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers) | AGPL-3.0 | 📊 **Smart Spreadsheet & Airtable Alternative** — Turns any relational database (PostgreSQL, MySQL, SQL Server) into a no-code collaborative data application platform with REST APIs and webhooks. |
 | **[Twenty](https://github.com/twentyhq/twenty)** | [![Twenty Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers) | AGPL-3.0 | 🤝 **Modern CRM & Salesforce Alternative** — Fully open-source CRM featuring Model Context Protocol (MCP) server integration, native GraphQL APIs, Docker/K8s deployment, and zero vendor lock-in. |
@@ -84,7 +84,7 @@ Contributions are warmly welcomed! Help keep this ecosystem guide up-to-date:
 2. 🌿 Create a descriptive branch: `git checkout -b add-awesome-data-app`.
 3. 📝 Update `README.md` following the tabular format and guidelines:
    - Provide verified starting tier pricing and specific trial / free tier terms.
-   - For open-source repos, verify the repository license and GitHub star badge format.
+   - For open-source repos, verify the repository license and GitHub Stars_Badge format.
 4. 🚀 Push your changes and submit a Pull Request with a clear description of additions.
 
 ---
